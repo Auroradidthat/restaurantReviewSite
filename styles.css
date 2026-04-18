@@ -1,0 +1,48 @@
+/*Nav Menu*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    border-style: dashed;
+    border-color: black;
+    margin: 30px;
+    text-align: center;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.card-styles {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 200px;
+    margin: 30px;
+    padding: 10px;
+    border-style: dashed;
+    
+}
+
+.deck-styles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.footer-styles {
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
