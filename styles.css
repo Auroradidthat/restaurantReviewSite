@@ -17,6 +17,7 @@ section {
     justify-content: center;
     gap: 20px;
     list-style: none;
+    text-decoration: none;
 }
 
 .card-styles {
