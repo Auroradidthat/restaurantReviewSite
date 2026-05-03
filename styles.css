@@ -25,6 +25,19 @@ section {
     color: black;
     padding: 5px 10px;
 }
+.nav-layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.lang-toggle a:link,
+.lang-toggle a:visited {
+    text-decoration: none;
+    color: black;
+}
 
 a.active-link {
     border-style: solid;
