@@ -53,6 +53,7 @@ a.active-link {
 }
 
 .footer-styles {
+    border-style: dashed;
     margin: 30px;
     padding: 10px;
     display: flex;
@@ -60,3 +61,21 @@ a.active-link {
     justify-content: space-around;
 }
 
+/*About Me*/
+.about-me-header {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.about-me-header > div {
+    flex: 1;
+}
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    
+}
+.about-image {
+    width: 50%;
+    height: auto;
+}
