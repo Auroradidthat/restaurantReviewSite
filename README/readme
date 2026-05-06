@@ -1,0 +1,34 @@
+**TOOLS**
+
+1. LAYOUT DEBUG TOOL v1.0.0
+<!--TODO:
+v2.0.0: Add Background Color Transparency Toggle.
+REQUIREMENT: #debug-toggle and #layout-debug must be siblings, with #layout-debug placed after #debug-toggle.-->
+
+**BEGIN**
+                                    **HTML**
+    <!--DEBUG TOOL: Wrap all content you intend to debug inside <div id="layout-debug">-->
+        <input type="checkbox" id="debug-toggle">
+        <label for="debug-toggle" class="debug-button">LAYOUT DEBUG TOOL</label>
+    <!--END DEBUG TOOL-->
+                                    **CSS**
+
+#debug-toggle:checked ~ #layout-debug section {
+    outline: 4px dashed #000000;
+}
+
+#debug-toggle:checked ~ #layout-debug div {
+    outline: 3px dotted #a40303;
+}
+
+#debug-toggle:checked ~ #layout-debug nav,
+#debug-toggle:checked ~ #layout-debug header,
+#debug-toggle:checked ~ #layout-debug article {
+    outline: 2px dotted #0b6a00;
+}
+<!--TEST THIS
+#background-debug-toggle:checked ~ #layout-debug * {
+    background-color: transparent;
+}
+-->
+**END**
