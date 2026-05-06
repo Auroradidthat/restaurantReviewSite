@@ -7,7 +7,13 @@
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body-layout-debug">
+<body>
+    <!--DEBUG TOOL **NOTE: WRAP <div id="layout-debug"> AROUND ALL CONTENT YOU INTEND TO CHANGE**-->
+        <input type="checkbox" id="debug-toggle">
+        <label for="debug-toggle" class="debug-button">LAYOUT DEBUG TOOL</label>
+    <!--END DEBUG TOOL-->
+
+<div id="layout-debug"> 
     <!--NAV MENU-->
     <header class="nav-layout">
         <nav class="nav-menu">
@@ -91,5 +97,6 @@
             </article>
         </div>
     </section>
+</div>   
 </body>
 </html>

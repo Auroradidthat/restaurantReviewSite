@@ -7,26 +7,22 @@ a {
     text-underline-offset: 5px;
 }
 
-/*Nav Menu*/
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.body-layout-debug section {
+/*LAYOUT DEBUG TOOL STYLES START*/
+#debug-toggle:checked ~ #layout-debug section {
     outline: 4px dashed #000000;
-}
+} /*we are making #debug-toggle in the checked state a sibling of #layout-debug using a combinator*/
 
-.body-layout-debug div {
+#debug-toggle:checked ~ #layout-debug div {
     outline: 3px dotted #a40303;
 }
 
-.body-layout-debug nav,
-.body-layout-debug header,
-.body-layout-debug article {
+#debug-toggle:checked ~ #layout-debug nav,
+#debug-toggle:checked ~ #layout-debug header,
+#debug-toggle:checked ~ #layout-debug article {
     outline: 2px dotted #0b6a00;
 }
+/*LAYOUT DEBUG TOOL STYLES END*/
 
 section {
     margin: 30px;
