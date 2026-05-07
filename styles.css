@@ -22,6 +22,9 @@ a {
 #debug-toggle:checked ~ #layout-debug article {
     outline: 2px dotted #0b6a00;
 }
+#debug-toggle:checked ~ #layout-debug a {
+    outline: 2px dotted blue;
+}
 /*LAYOUT DEBUG TOOL STYLES END*/
 
 section {
