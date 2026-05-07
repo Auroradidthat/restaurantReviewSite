@@ -1,12 +1,50 @@
 /*TODO:
 *
 */
+
+/*TYPEFACES*/
+
+/*HEADER + ANCHOR*/
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+/*Paragraph*/
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Momo+Trust+Display&display=swap');
+
+
+body {
+    background-color: #ABFFCC;
+}
+
+
+/*HEADER AND ANCHOR STYLES*/
+h1, h2, h3, a
+ {
+    font-family: "Momo Trust Display", sans-serif;
+    color: #59402A;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+      font-family: "Atkinson Hyperlegible Next", sans-serif;
+      color: #59402A;
+}
+
 a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
 }
-
 
 /*LAYOUT DEBUG TOOL STYLES START*/
 #debug-toggle:checked ~ #layout-debug section {
@@ -32,7 +70,7 @@ section {
     text-align: center;
 }
 
-.nav-menu ul {
+nav ul {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -40,23 +78,26 @@ section {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
-.nav-menu a {
-    color: black;
-    padding: 5px 10px;
-}
-
-.nav-layout {
-    display: flex;
+a {
+    color: #ABFFCC;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    display: inline-block;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
+    background-color: #59402A;
 }
 
+article {
+    border: solid #59402A 5px;
+}
+
+/*TODO: LANGUAGE TOGGLE FEATURE*/
 .lang-toggle a:link,
 .lang-toggle a:visited {
     color: black;
