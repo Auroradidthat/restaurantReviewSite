@@ -84,17 +84,17 @@ a {
     color: #ABFFCC;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    border: 2rem solid transparent;
+    border: 0.25rem solid transparent;
     display: inline-block;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     background-color: #59402A;
 }
 
 article {
-    border: solid #59402A 5px;
+    border: solid #59402A 0.3125rem;
 }
 
 /*TODO: LANGUAGE TOGGLE FEATURE*/
@@ -105,42 +105,35 @@ article {
 
 a.active-link {
     border-style: solid;
-    border-width: 0px 5px;
-    border-radius: 5px;
+    border-width: 0rem 0.3125rem
+;
+    border-radius: 0.3125rem;
 }
 
 .card-styles {
     display: flex;
     flex-direction: column;
-    flex: 1 1 200px;
-    max-width: 200px; 
-    margin: 30px;
-    padding: 10px;
+    flex: 0.0625rem 0.0625rem 12.5rem;
+    max-width: 12.5rem; 
+    margin: 1.875rem;
+    padding: 0.625rem;
 }
 .deck-styles {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .content-card {
-    max-width: 1000px;
-}
-
-.footer-styles {
-    margin: 30px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    max-width: 62.5rem;
 }
 
 /*About Me*/
 .about-me-header {
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .about-me-header > div {
