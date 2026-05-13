@@ -1,6 +1,29 @@
 /*TODO:
-*
+* make flex work without breakpoints clamp(), min() max()
+* does this size actually change stuff
+* do breakpoints in a new file responsive.css
+* challenge: bring some JS in! (tool #2) they only want to know about ambiance and cost
+* duckduck go (see if you have access to time)
+* visual button (2wks backburner branch)
+* push in html + css
 */
+
+/**BEGIN NOTES
+Use REM for:
+font-size
+padding
+margin
+gap
+border-radius
+***
+Use PX for:
+thin borders
+shadows
+hairlines
+***
+Use VW inside clamp()
+clamp(min, vw, max)
+**END NOTES**/
 
 /*TYPEFACES*/
 
@@ -17,27 +40,27 @@ body {
 
 
 /*HEADER AND ANCHOR STYLES*/
-h1, h2, h3, a
- {
+h1, h2, h3, a {
     font-family: "Momo Trust Display", sans-serif;
     color: #59402A;
 }
 
 h1 {
-    font-size: 3.75rem;
+    font-size: clamp(2rem, 6vw, 4rem);
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: clamp(1.125rem, 2.5vw, 1.75rem);
 }
 
 p {
-      font-family: "Atkinson Hyperlegible Next", sans-serif;
-      color: #59402A;
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    color: #59402A;
+    font-size: clamp(1rem, 1vw 1.125rem);  
 }
 
 a {
@@ -60,14 +83,25 @@ a {
 #debug-toggle:checked ~ #layout-debug article {
     outline: 0.25rem dotted #0b6a00;
 }
+
 #debug-toggle:checked ~ #layout-debug a {
     outline: 0.25rem dotted blue;
 }
+
 /*LAYOUT DEBUG TOOL STYLES END*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 section {
     margin: 1.875rem;
     text-align: center;
+}
+
+section p {
+    text-align: left;
 }
 
 nav ul {
@@ -80,7 +114,7 @@ nav ul {
     padding: 0;
 }
 
-a {
+nav a {
     color: #ABFFCC;
     padding: 1rem 2rem;
     border-radius: 1rem;
@@ -94,6 +128,8 @@ a {
 }
 
 article {
+    display: flex;
+    justify-content: space-around;
     border: solid #59402A 0.3125rem;
 }
 
@@ -105,8 +141,7 @@ article {
 
 a.active-link {
     border-style: solid;
-    border-width: 0rem 0.3125rem
-;
+    border-width: 0rem 0.3125rem;
     border-radius: 0.3125rem;
 }
 
@@ -118,6 +153,7 @@ a.active-link {
     margin: 1.875rem;
     padding: 0.625rem;
 }
+
 .deck-styles {
     display: flex;
     flex-wrap: wrap;
@@ -125,6 +161,7 @@ a.active-link {
     align-items: stretch;
     gap: 1.25rem;
 }
+
 .content-card {
     max-width: 62.5rem;
 }
